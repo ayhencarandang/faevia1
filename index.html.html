@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faevia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+
+    <h1>
+        <div class="logo-container">
+            <span class="logo-text">Faevia</span>
+            <img src="fv.png" alt="FV Logo" class="logo">
+        </div>
+        <nav class="nav-header-nav"> 
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+                <li><a href="#" onclick="showSection('info')">Info</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </h1>
+
+    <div id="home" class="section">
+        <header>
+            <h2>Welcome to Faevia!</h2>
+            <button onclick="showSection('about')">Click Me!</button>
+        </header>
+    </div>
+
+    <div id="about" class="section" style="display:none;">
+        <h2>About This Website</h2>
+        <p>Welcome to this website, where you can learn more about what this page is all about. 
+        <p>This website is a personal space created to introduce who I am as an individual. Here, you will get to know me better—my interests, hobbies, likes and dislikes, and the projects I have worked on so far, especially in the field of coding.
+            You will also find information about my journey as a Computer Science student, including my experiences during my first year in the program. This website serves as a reflection of my growth, skills, and passion for technology, as well as a place where I share what I have learned and continue to learn along the way.</p>       
+        <p>The Home section serves as the starting point of the website and gives visitors their first impression. 
+            It acts like the wallpaper of the site, setting the overall theme and mood. This is where users are welcomed and guided on what to expect as they explore further. 
+            The Home page reflects the identity of the website and introduces its purpose, encouraging visitors to navigate through the different sections to learn more.</p>
+        <p>The Info section is all about me. This part of the website provides a deeper look into who I am as a person and as a student. Here, you will find details about my hobbies, interests, likes and dislikes, as well as the projects I have worked on so far. 
+            It also highlights my experiences during my first year of taking up Computer Science, including the skills and knowledge I have gained along the way.
+            Additionally, this section shares basic personal information such as where I am currently studying and my age. Overall, the Info page serves as a space to introduce my background, showcase my journey, and give visitors a better understanding of who I am.</p>
+        <p>The Contact section contains all the information needed to get in touch with me. This is where you can find my email address, contact number, and links to my social media accounts. 
+            It also includes my GitHub profile, where you can view my projects and coding work.
+            This section makes it easy for visitors, collaborators, or potential connections to reach out, communicate, or follow my work across different platforms.</p>
+        <button class="next-btn" onclick="showSection('info')">Next</button>
+    </div>
+
+    <div id="info" class="section" style="display:none;">
+        <h2>My Information</h2>
+        <div class="info-intro">
+            <p>Hi! I'm Ayhen Fhayte T. Carandang, 18 year's old, currently studying Computer Science at Laguna State Polytechnic University. 
+                I am passionate about technology and continuously learning new skills related to coding and software development.</p>
+            <img src="me.jpg" alt="Ayhen Fhayte T. Carandang" class="info-image">
+        </div>
+        <div class="info-top">
+            <div class="info-column">
+                <p class="column-title">Hobbies</p>
+                <ul>
+                    <li>Playing Video Games</li>
+                    <li>Watching Series or Movies</li>
+                    <li>Listening to Music</li>
+                    <li>Photography</li>
+                    <li>Exercising or Working Out</li>
+                    <li>Editing Videos or Photos</li>
+                </ul>
+            </div>
+
+            <div class="info-column">
+                <p class="column-title">Likes</p>
+                <ul>
+                    <li>Learning new things</li>
+                    <li>Organizing</li>
+                    <li>Working or doing things late at night</li>
+                    <li>Comfortable clothes</li>
+                    <li>Calm and quiet environments</li>
+                    <li>Achieving small goals</li>
+                    <li>Peaceful mornings</li>
+                </ul>
+            </div>
+
+            <div class="info-column">
+                <p class="column-title">Dislikes</p>
+                <ul>
+                    <li>Loud and Crowded Places</li>
+                    <li>Too much noise while working</li>
+                    <li>Being rushed</li>
+                    <li>Constant Distractions</li>
+                    <li>Messy Workspaces</li>
+                    <li>Burnout</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="info-bottom">
+            <div class="skills-column">
+                <p class="column-title">Skills</p>
+                <ul>
+                    <li>Teamwork</li>
+                    <li>Collaboration</li>
+                    <li>Communication</li>
+                    <li>Adaptability</li>
+                    <li>Open-mindedness</li>
+                    <li>Willingness to experiment</li>
+                </ul>
+            </div>
+
+            <div class="info-projects">
+                <p class="column-title">Projects</p>
+                <ul>
+                    <li>E.L.I.A.S (Earthquake Local Intensity Alarm System) - Group capstone research project from Grade 12 Senior High.</li>
+                    <li>Faevia - Individual portfolio website project I created in my first year of college.</li>
+                </ul>
+            </div>
+        </div>
+
+        <button class="prev-btn" onclick="showSection('about')">Previous</button>
+        <button class="next-btn2" onclick="showSection('contact')">Next</button>
+    </div>
+
+    <div id="contact" class="section" style="display:none;">
+        <h2>Contact Me</h2>
+        <p>You can contact me through the platforms below.
+            I'm happy to receive messages, questions, or collaboration ideas.</p>
+        
+        <div class="contact-columns">
+            <div class="contact-column">
+                <p class="column-title">Contact Information</p>
+                <ul>
+                    <li>Email: 0325-1115@lspu.edu.ph</li>
+                    <li>Phone: +63 9304286005</li>
+                </ul>
+            </div>
+            
+            <div class="contact-column">
+                <p class="column-title">Social Media</p>
+                <ul>
+                    <li>Facebook: <a href="https://web.facebook.com/ayhenfhayte.carandang" target="_blank">Ayhen Fhayte Carandang</a></li>
+                    <li>Instagram: <a href="https://www.instagram.com/ayhn.fhyt_?fbclid=IwY2xjawPCvv9leHRuA2FlbQIxMABicmlkETF5Y3N3b0t0eEJWZVBQczIyc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHjjm_rBuoEK_wn4y168FQo7olQ_aQXCAS5eItdnuhIwmD41H9pxRtVnbRfEK_aem_troT_-eX8oELxAv2Dpfyig" target="_blank">ayhn.fhyt_</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="contact-github">
+            <p class="column-title">GitHub Account</p>
+            <ul>
+                <li><a href="https://github.com/ayhencarandang" target="_blank">: ayhencarandang</a></li>
+            </ul>
+        </div>
+        <button class="prev-btn" onclick="showSection('info')">Previous</button>
+        <button class="next-btn" onclick="showSection('thankyou')">Next</button>
+    </div>
+
+    <div id="thankyou" class="section" style="display:none;">
+        <h2> </h2>
+        <div class="thank-container">
+            <p class="highlight">Thank you for visiting <a href="faevia.png" target="_blank">Faevia</a>!</p>
+            <div class="thank-box">
+                <p>I appreciate you taking the time to learn more about me and my work. 
+                    If you have any questions or would like to collaborate, please don't hesitate to reach out using the contact information provided in the Contact section.</p>
+                <p>Feel free to explore more of my projects on GitHub or connect with me on social media.</p>
+            </div>
+        </div>
+        <button class="home-btn" onclick="showSection('home')">Home</button>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+                section.classList.remove('animate-in');
+            });
+
+            const target = document.getElementById(sectionId);
+            if (!target) return;
+            target.style.display = 'block';
+            void target.offsetWidth;
+            target.classList.add('animate-in');
+        }
+
+        showSection('home');
+
+        const starsContainer = document.querySelector('.stars');
+        const numStars = 100;
+
+        for (let i = 0; i < numStars; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.animationDelay = Math.random() * 3 + 's';
+            star.style.animationDuration = (Math.random() * 2 + 1) + 's';
+            starsContainer.appendChild(star);
+        }
+    </script>
+
+
+</body>
+</html>
